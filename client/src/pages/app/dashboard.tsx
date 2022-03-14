@@ -5,12 +5,14 @@ import logo from './logo.svg';
 import '../../App.css';
 
 import DashboardNavbar from '../../components/items/navbar/dashboard.navbar'
+import ProgramCard from '../../components/items/cards/program.card'
 
 class Dashboard extends Component<any, any> {
   render() {
     return (
         <div className='dashboard'>
             <DashboardNavbar></DashboardNavbar>
+            <ProgramCard></ProgramCard>
             <h1>TESTTESTETETTETETTETETETETETETETET</h1>
             
 

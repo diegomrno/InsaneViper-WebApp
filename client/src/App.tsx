@@ -6,6 +6,7 @@ import './App.css';
 
 import Dashboard from './pages/app/dashboard'
 import DashboardNavbar from './components/items/navbar/dashboard.navbar'
+import Example from './components/testcomponent'
 
 class App extends Component<any, any> {
   render() {
@@ -13,6 +14,7 @@ class App extends Component<any, any> {
         <Routes>
           <Route path='*' element={<Dashboard />}/>
           <Route path='/dash' element={<DashboardNavbar />}/>
+          <Route path='/test' element={<Example />}/>
           
         </Routes>
     );
