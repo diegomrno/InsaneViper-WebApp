@@ -1,19 +1,22 @@
-import React from 'react';
-import {Component} from 'react';
+import React, { Component } from 'react';
+import { Route, Routes } from "react-router-dom";
+
 import logo from './logo.svg';
 import './App.css';
 
-import Example from './components/testcomponent'
+import Dashboard from './pages/app/dashboard'
+import DashboardNavbar from './components/items/navbar/dashboard.navbar'
 
-class App extends Component {
+class App extends Component<any, any> {
   render() {
     return (
-      <div>
-        <Example></Example>
-      </div>
-      
+        <Routes>
+          <Route path='*' element={<Dashboard />}/>
+          <Route path='/dash' element={<DashboardNavbar />}/>
+          
+        </Routes>
     );
   }
 }
 
-export default App;
+export default App

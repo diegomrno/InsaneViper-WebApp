@@ -2,7 +2,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import '../App.css';
 
 const user = {
   name: 'Tom Cook',
@@ -27,7 +26,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function DashboardNavbar() {
   return (
     <>
       {/*
