@@ -11,11 +11,7 @@ class Dashboard extends Component<any, any> {
   render() {
     return (
         <div className='dashboard'>
-            <DashboardNavbar></DashboardNavbar>
-            <ProgramCard></ProgramCard>
-            <h1>TESTTESTETETTETETTETETETETETETETET</h1>
-            
-
+            <DashboardNavbar />
         </div>
     );
   }
