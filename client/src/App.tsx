@@ -13,7 +13,7 @@ class App extends Component<any, any> {
     return (
         <Routes>
           <Route path='*' element={<Dashboard />}/>
-          <Route path='/dash' element={<DashboardNavbar />}/>
+          <Route path='/dashboard' element={<DashboardNavbar />}/>
           <Route path='/test' element={<Example />}/>
           
         </Routes>
