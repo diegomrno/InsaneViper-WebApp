@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Programmes', href: '#', current: false },
   { name: 'Machines', href: '#', current: false },
   { name: 'Calendrier', href: '#', current: false },
-  { name: 'Autres', href: '#', current: false },
+  { name: 'Autres', href: '#', current: false }
 ]
 const userNavigation = [
   { name: 'Dashboard', href: '#' },
