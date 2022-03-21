@@ -15,7 +15,6 @@ class App extends Component<any, any> {
           <Route path='*' element={<Dashboard />}/>
           <Route path='/dashboard' element={<DashboardNavbar />}/>
           <Route path='/test' element={<Example />}/>
-      Olivier
         </Routes>
     );
   }
