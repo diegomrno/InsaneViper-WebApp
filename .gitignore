@@ -3,6 +3,7 @@ dist/
 
 # Config file
 config/config.js
+.gitpod.yml
 
 # Node stuff
 node_modules/
