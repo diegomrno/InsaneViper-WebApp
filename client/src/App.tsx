@@ -15,6 +15,10 @@ class App extends Component<any, any> {
           <Route path='*' element={<Dashboard />}/>
           <Route path='/dashboard' element={<DashboardNavbar />}/>
           <Route path='/test' element={<Example />}/>
+          <Route path='/account/login' element={<Example />}/>
+          <Route path='/account/signup' element={<Example />}/>
+          <Route path='/account/login' element={<Example />}/>
+
         </Routes>
     );
   }

@@ -2,15 +2,17 @@
 
 const router = require('express').Router();
 //const apiRoutes = require('./includeroutes/');
+
+const RFIDRoute = require('./includeroutes/rfid.route');
 /*
-const ArticleRoute = require('./includeroutes/article.route');
 const ContactRoute = require('./includeroutes/contact.route');
 const CustomPageRoute = require('./includeroutes/custompage.route');
 const NavbarRoute = require('./includeroutes/navbar.route')
 const PrincingRoute = require('./includeroutes/princing.route');
 */
 
-/*router.use("/api/article", ArticleRoute);
+router.use("/api/rfid", RFIDRoute);
+/*
 router.use("/api/contact", ContactRoute);
 router.use("/api/custompage", CustomPageRoute);
 router.use("/api/navbar", NavbarRoute);
