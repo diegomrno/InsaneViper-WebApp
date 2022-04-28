@@ -6,11 +6,16 @@ const router = express.Router();
 
 const paths = {
     Test: '/test',
+    Check: '/check/:rfid'
 };
 
 // Api Test
-router.post(paths.Test, (req, res) => {
-        res.send("The QGDH REST API working correctly !");
+router.get(paths.Test, (req, res) => {
+        res.send(true);
 });
+
+router.get(paths.Check, (req, res) => {
+    res.send("Rfid check... : ");
+})
 
 export default module.exports = router;

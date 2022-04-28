@@ -24,6 +24,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 
+
+// Add api router
+
+app.use(routes);
+
 // Show routes called in console during development
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
@@ -39,9 +44,6 @@ if (process.env.NODE_ENV === 'production') {
  *                         API routes and error handling
  **********************************************************************************/
 
-// Add api router
-
-app.use(routes);
 // Error handling
 app.use((err: Error | CustomError, _: Request, res: Response, __: NextFunction) => {
     logger.err(err, true);
